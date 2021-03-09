@@ -40,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
                             "LOGIN SUKSES || email : " + nama + " password : " + password + "", Toast.LENGTH_LONG);
                     t.show();
                 }
-                else if (!edemail.getText().toString().equals("admin@mail.com")) {
+                else if (!edemail.getText().toString().equals("admin@mail.com")&&edpassword.getText().toString().equals("123")) {
                     Toast t = Toast.makeText(getApplicationContext(),
                            " Email salah ", Toast.LENGTH_SHORT);
                     t.show();
                 }
-                else if (!edpassword.getText().toString().equals("123")) {
+                else if (!edpassword.getText().toString().equals("123")&&edemail.getText().toString().equals("admin@mail.com")) {
                     Toast t = Toast.makeText(getApplicationContext(),
                             " Password salah ", Toast.LENGTH_SHORT);
                     t.show();
